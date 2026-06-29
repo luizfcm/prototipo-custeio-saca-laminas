@@ -1,0 +1,558 @@
+{
+  "versoes": [
+    {
+      "nome": "Saca-Lâminas V1",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "maio/2021",
+        "testada": "Não",
+        "motivacao": "Primeiro protótipo — teste da alavanca de retirada da lâmina"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 106,
+          "massa_g": 23.68
+        },
+        "lote": {
+          "num_pecas": 10,
+          "tempo_total_min": 972,
+          "massa_total_g": 133.36
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 5654.4,
+        "custo_mao_obra": 4523.9,
+        "custo_indireto": 1130.5,
+        "tempo_total_horas": 95.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 10,
+            "custo": 595.2
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 61,
+            "custo": 3630.72
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 0,
+            "custo": 0.0
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 20,
+            "custo": 1190.4
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V2",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "maio/2021",
+        "testada": "Não",
+        "motivacao": "Aprimoramento do tamanho e continuação da validação da alavanca"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 102,
+          "massa_g": 11.65
+        },
+        "lote": {
+          "num_pecas": 20,
+          "tempo_total_min": 1190,
+          "massa_total_g": 156.77
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 1488.0,
+        "custo_mao_obra": 1190.5,
+        "custo_indireto": 297.5,
+        "tempo_total_horas": 25.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 0,
+            "custo": 0.0
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 19,
+            "custo": 1130.88
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 0,
+            "custo": 0.0
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V3",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "maio/2021",
+        "testada": "Não",
+        "motivacao": "Inclusão de anteparo para diferentes lâminas e cabos de bisturi"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 30,
+          "massa_g": 5.62
+        },
+        "lote": {
+          "num_pecas": 30,
+          "tempo_total_min": 867,
+          "massa_total_g": 105.97
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 922.56,
+        "custo_mao_obra": 738.11,
+        "custo_indireto": 184.45,
+        "tempo_total_horas": 15.5,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 0,
+            "custo": 0.0
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 9.5,
+            "custo": 565.44
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 0,
+            "custo": 0.0
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V4",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "junho/2021",
+        "testada": "Não",
+        "motivacao": "Redução do tamanho para ser segurado com a mão"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 38,
+          "massa_g": 5.21
+        },
+        "lote": {
+          "num_pecas": 30,
+          "tempo_total_min": 1050,
+          "massa_total_g": 91.44
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 2142.72,
+        "custo_mao_obra": 1714.32,
+        "custo_indireto": 428.4,
+        "tempo_total_horas": 36.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 0,
+            "custo": 0.0
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 26,
+            "custo": 1547.52
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 8,
+            "custo": 476.16
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 0,
+            "custo": 0.0
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V5",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "junho/2021",
+        "testada": "Não",
+        "motivacao": "Novo modelo com caixa para reter a lâmina"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 80,
+          "massa_g": 12.02
+        },
+        "lote": {
+          "num_pecas": 16,
+          "tempo_total_min": 1473,
+          "massa_total_g": 146.37
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 3154.56,
+        "custo_mao_obra": 2523.86,
+        "custo_indireto": 630.7,
+        "tempo_total_horas": 53.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 8,
+            "custo": 476.16
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 27,
+            "custo": 1607.04
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 6,
+            "custo": 357.12
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 10,
+            "custo": 595.2
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V6",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "2022",
+        "testada": "Sim — HRAN",
+        "motivacao": "Anteparo para evitar contato entre mão do profissional e lâmina"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 47,
+          "massa_g": 6.92
+        },
+        "lote": {
+          "num_pecas": 12,
+          "tempo_total_min": 546,
+          "massa_total_g": 52.38
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 2202.24,
+        "custo_mao_obra": 1761.94,
+        "custo_indireto": 440.3,
+        "tempo_total_horas": 37.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 8,
+            "custo": 476.16
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 13,
+            "custo": 773.76
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 10,
+            "custo": 595.2
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V7.1",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "2023–2024",
+        "testada": "Sim — HRAN",
+        "motivacao": "Modelo para acoplamento na boca da caixa de descarte"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 39,
+          "massa_g": 5.16
+        },
+        "lote": {
+          "num_pecas": 32,
+          "tempo_total_min": 1129,
+          "massa_total_g": 94.94
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 2440.32,
+        "custo_mao_obra": 1952.42,
+        "custo_indireto": 487.9,
+        "tempo_total_horas": 41.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 8,
+            "custo": 476.16
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 11,
+            "custo": 654.72
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 10,
+            "custo": 595.2
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 8,
+            "custo": 476.16
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V7.2",
+      "tipo": "peca_unica",
+      "info": {
+        "data_versao": "2023–2024",
+        "testada": "Sim — HRAN",
+        "motivacao": "Ajustes estruturais para aumentar durabilidade na caixa"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 40,
+          "massa_g": 5.24
+        },
+        "lote": {
+          "num_pecas": 32,
+          "tempo_total_min": 1197,
+          "massa_total_g": 97.67
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 1726.08,
+        "custo_mao_obra": 1380.98,
+        "custo_indireto": 345.1,
+        "tempo_total_horas": 29.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 8,
+            "custo": 476.16
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 5,
+            "custo": 297.6
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 10,
+            "custo": 595.2
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V8",
+      "tipo": "duas_partes",
+      "info": {
+        "data_versao": "2024–2025",
+        "testada": "Sim — HUB",
+        "motivacao": "Versão final aprovada no HUB-UnB — acoplamento lateral com duas peças"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 42,
+          "massa_g": 8.49
+        },
+        "lote": {
+          "num_pecas": 20,
+          "tipo": "duas_partes",
+          "parte_a": {
+            "tempo_min": 521,
+            "massa_g": 98.18
+          },
+          "parte_b": {
+            "tempo_min": 321,
+            "massa_g": 70.38
+          }
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 5952.0,
+        "custo_mao_obra": 4762.0,
+        "custo_indireto": 1190.0,
+        "tempo_total_horas": 100.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 8,
+            "custo": 476.16
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 44,
+            "custo": 2618.88
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 6,
+            "custo": 357.12
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 40,
+            "custo": 2380.8
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    },
+    {
+      "nome": "Saca-Lâminas V8.1",
+      "tipo": "duas_partes",
+      "info": {
+        "data_versao": "2025–2026",
+        "testada": "Sim — HUB e HRAN",
+        "motivacao": "Aumento de 3 para 6 tamanhos de lâminas suportadas"
+      },
+      "dados_tecnicos": {
+        "unitario": {
+          "tempo_min": 46,
+          "massa_g": 8.49
+        },
+        "lote": {
+          "num_pecas": 20,
+          "tipo": "duas_partes",
+          "parte_a": {
+            "tempo_min": 560,
+            "massa_g": 98.18
+          },
+          "parte_b": {
+            "tempo_min": 350,
+            "massa_g": 70.38
+          }
+        }
+      },
+      "desenvolvimento": {
+        "custo_total": 1190.4,
+        "custo_mao_obra": 952.4,
+        "custo_indireto": 238.0,
+        "tempo_total_horas": 20.0,
+        "custo_operador_hora": 47.62,
+        "atividades": {
+          "reunioes_equipe_saude": {
+            "label": "Reuniões com equipe de saúde",
+            "horas": 3,
+            "custo": 178.56
+          },
+          "analise_dfam": {
+            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
+            "horas": 7,
+            "custo": 416.64
+          },
+          "validacao_laboratorio": {
+            "label": "Validação no laboratório",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "validacao_usuario": {
+            "label": "Validação com usuário / hospital",
+            "horas": 4,
+            "custo": 238.08
+          },
+          "documentacao_versao": {
+            "label": "Documentação da versão",
+            "horas": 2,
+            "custo": 119.04
+          }
+        }
+      }
+    }
+  ]
+}
