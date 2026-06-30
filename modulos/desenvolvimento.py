@@ -1,6 +1,6 @@
 ATIVIDADES_PRE = [
     ("reunioes_equipe_saude", "Reuniões com equipe de saúde"),
-    ("analise_dfam",          "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)"),
+    ("analise_dfam",          "Análise de DfAM (Requisitos, Modelagem, Fatiamento)"),
 ]
 
 ATIVIDADES_POS = [

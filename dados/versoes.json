@@ -20,10 +20,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 5654.4,
-        "custo_mao_obra": 4523.9,
-        "custo_indireto": 1130.5,
-        "tempo_total_horas": 95.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 94.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -32,9 +32,9 @@
             "custo": 595.2
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 61,
-            "custo": 3630.72
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 60.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -74,10 +74,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 1488.0,
-        "custo_mao_obra": 1190.5,
-        "custo_indireto": 297.5,
-        "tempo_total_horas": 25.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 24.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -86,9 +86,9 @@
             "custo": 0.0
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 19,
-            "custo": 1130.88
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 18.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -128,10 +128,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 922.56,
-        "custo_mao_obra": 738.11,
-        "custo_indireto": 184.45,
-        "tempo_total_horas": 15.5,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 14.75,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -140,9 +140,9 @@
             "custo": 0.0
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 9.5,
-            "custo": 565.44
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 8.75,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -182,10 +182,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 2142.72,
-        "custo_mao_obra": 1714.32,
-        "custo_indireto": 428.4,
-        "tempo_total_horas": 36.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 35.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -194,9 +194,9 @@
             "custo": 0.0
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 26,
-            "custo": 1547.52
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 25.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -236,10 +236,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 3154.56,
-        "custo_mao_obra": 2523.86,
-        "custo_indireto": 630.7,
-        "tempo_total_horas": 53.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 52.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -248,9 +248,9 @@
             "custo": 476.16
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 27,
-            "custo": 1607.04
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 26.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -290,10 +290,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 2202.24,
-        "custo_mao_obra": 1761.94,
-        "custo_indireto": 440.3,
-        "tempo_total_horas": 37.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 36.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -302,9 +302,9 @@
             "custo": 476.16
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 13,
-            "custo": 773.76
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 12.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -344,10 +344,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 2440.32,
-        "custo_mao_obra": 1952.42,
-        "custo_indireto": 487.9,
-        "tempo_total_horas": 41.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 40.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -356,9 +356,9 @@
             "custo": 476.16
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 11,
-            "custo": 654.72
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 10.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -398,10 +398,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 1726.08,
-        "custo_mao_obra": 1380.98,
-        "custo_indireto": 345.1,
-        "tempo_total_horas": 29.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 28.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -410,9 +410,9 @@
             "custo": 476.16
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 5,
-            "custo": 297.6
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 4.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -459,10 +459,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 5952.0,
-        "custo_mao_obra": 4762.0,
-        "custo_indireto": 1190.0,
-        "tempo_total_horas": 100.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 99.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -471,9 +471,9 @@
             "custo": 476.16
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 44,
-            "custo": 2618.88
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 43.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",
@@ -520,10 +520,10 @@
         }
       },
       "desenvolvimento": {
-        "custo_total": 1190.4,
-        "custo_mao_obra": 952.4,
-        "custo_indireto": 238.0,
-        "tempo_total_horas": 20.0,
+        "custo_total": 0,
+        "custo_mao_obra": 0,
+        "custo_indireto": 0,
+        "tempo_total_horas": 19.25,
         "custo_operador_hora": 47.62,
         "atividades": {
           "reunioes_equipe_saude": {
@@ -532,9 +532,9 @@
             "custo": 178.56
           },
           "analise_dfam": {
-            "label": "Análise e modelagem (CAD, DfAM, fatiamento, requisitos)",
-            "horas": 7,
-            "custo": 416.64
+            "label": "Análise de DfAM (Requisitos, Modelagem, Fatiamento)",
+            "horas": 6.25,
+            "custo": 0
           },
           "validacao_laboratorio": {
             "label": "Validação no laboratório",

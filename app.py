@@ -359,7 +359,7 @@ with aba_dev:
             st.divider()
             md1, md2, md3, md4 = st.columns(4)
             md1.metric("Custo Total",     f"R$ {r_d['custo_total']:.2f}")
-            md2.metric("Tempo Total",     f"{r_d['tempo_total_horas']:.1f} h")
+            md2.metric("Tempo Total",     f"{r_d['tempo_total_horas']:.2f} h")
             md3.metric("Mão de Obra",     f"R$ {r_d['custo_mao_obra']:.2f}")
             md4.metric("Custo Indireto",  f"R$ {r_d['custo_indireto']:.2f}")
 
@@ -370,12 +370,12 @@ with aba_dev:
             col_td, col_gd = st.columns(2)
             with col_td:
                 rows_dev = [
-                    {"Atividade": a["label"], "Horas": f"{a['horas']:.1f}h",
+                    {"Atividade": a["label"], "Horas": f"{a['horas']:.2f}h",
                      "Custo (R$)": f"R$ {a['custo']:.2f}"}
                     for a in ativs_res.values()
                 ]
                 rows_dev.append({"Atividade": "TOTAL",
-                                  "Horas": f"{r_d['tempo_total_horas']:.1f}h",
+                                  "Horas": f"{r_d['tempo_total_horas']:.2f}h",
                                   "Custo (R$)": f"R$ {r_d['custo_total']:.2f}"})
                 st.dataframe(pd.DataFrame(rows_dev), use_container_width=True, hide_index=True)
 
