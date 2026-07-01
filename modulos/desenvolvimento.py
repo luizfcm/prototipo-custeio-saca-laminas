@@ -14,13 +14,16 @@ def calcular_custo_desenvolvimento(
     tempos_horas: dict,
     custo_operador_hora: float,
     custo_indireto_hora: float,
+    considerar_indireto: bool = True,
 ) -> dict:
+    taxa_indireto = custo_indireto_hora if considerar_indireto else 0.0
+
     atividades_resultado = {}
     tempo_total = 0.0
 
     for chave, label in ATIVIDADES_PRE + ATIVIDADES_POS:
         horas = tempos_horas.get(chave, 0.0)
-        custo = horas * (custo_operador_hora + custo_indireto_hora)
+        custo = horas * (custo_operador_hora + taxa_indireto)
         atividades_resultado[chave] = {
             "label": label,
             "horas": horas,
@@ -29,7 +32,7 @@ def calcular_custo_desenvolvimento(
         tempo_total += horas
 
     custo_mao_obra_total = tempo_total * custo_operador_hora
-    custo_indireto_total = tempo_total * custo_indireto_hora
+    custo_indireto_total = tempo_total * taxa_indireto
     custo_total = custo_mao_obra_total + custo_indireto_total
 
     return {

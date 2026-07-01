@@ -16,6 +16,7 @@ def calcular_custo_fabricacao(
     tempo_setup_min: float,
     tempo_pos_min: float,
     rodadas_setup: int = 2,
+    considerar_indireto: bool = True,
 ) -> dict:
     taxa_maquina = (custo_aquisicao + custo_manutencao - valor_residual) / vida_util_horas
 
@@ -25,7 +26,7 @@ def calcular_custo_fabricacao(
     massa_total = massa_A_g + massa_B_g
     custo_material = (massa_total / pecas_por_lote) * custo_filamento_grama
 
-    taxa_combinada = custo_operador_hora + custo_indireto_hora
+    taxa_combinada = custo_operador_hora + (custo_indireto_hora if considerar_indireto else 0.0)
     custo_setup = (rodadas_setup * (tempo_setup_min / 60) * taxa_combinada) / pecas_por_lote
     custo_pos = (tempo_pos_min / 60) * taxa_combinada
 
@@ -33,7 +34,10 @@ def calcular_custo_fabricacao(
     # pois a supervisão é passiva (Concli, 2023 / Kelly, 2025)
     custo_mao_obra = (tempo_total_horas * 0.10 / pecas_por_lote) * (custo_operador_hora / 10)
 
-    custo_indireto = (custo_indireto_hora * tempo_total_horas) / pecas_por_lote
+    custo_indireto = (
+        (custo_indireto_hora * tempo_total_horas) / pecas_por_lote
+        if considerar_indireto else 0.0
+    )
 
     custo_total = (
         custo_material
@@ -69,6 +73,7 @@ def calcular_custo_unitario(
     custo_indireto_hora: float,
     tempo_setup_min: float,
     tempo_pos_min: float,
+    considerar_indireto: bool = True,
 ) -> dict:
     """A e B impressos juntos na mesma bandeja — 1 peça, 1 setup, sem rateio de lote."""
     taxa_maquina = (custo_aquisicao + custo_manutencao - valor_residual) / vida_util_horas
@@ -77,12 +82,12 @@ def calcular_custo_unitario(
     custo_maquina = taxa_maquina * tempo_total_horas
     custo_material = massa_total_g * custo_filamento_grama
 
-    taxa_combinada = custo_operador_hora + custo_indireto_hora
+    taxa_combinada = custo_operador_hora + (custo_indireto_hora if considerar_indireto else 0.0)
     custo_setup = (tempo_setup_min / 60) * taxa_combinada  # 1 rodada, sem rateio
     custo_pos = (tempo_pos_min / 60) * taxa_combinada
 
     custo_mao_obra = (tempo_total_horas * 0.10) * (custo_operador_hora / 10)
-    custo_indireto = custo_indireto_hora * tempo_total_horas
+    custo_indireto = custo_indireto_hora * tempo_total_horas if considerar_indireto else 0.0
 
     custo_total = (
         custo_material

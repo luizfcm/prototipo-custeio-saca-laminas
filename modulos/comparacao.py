@@ -30,7 +30,10 @@ def _build_label(c: dict) -> str:
     """Identificador único: 'V5 | Lote | Consultor (R$ 47,62/h)'."""
     versao = c["versao"].replace("Saca-Lâminas ", "")
     modo_display = c["modo"] if c["modo"] != "—" else "Dev"
-    return f"{versao} | {modo_display} | {c['perfil']}"
+    label = f"{versao} | {modo_display} | {c['perfil']}"
+    if not c.get("considerar_indireto", True):
+        label += " | s/ indiretos"
+    return label
 
 
 def construir_dataframe(comparacoes: list) -> pd.DataFrame:

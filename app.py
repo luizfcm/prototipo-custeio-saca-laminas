@@ -83,7 +83,7 @@ def _selecionar_operador(key_suffix: str) -> tuple[float, str]:
     return custo, nome
 
 
-def _calcular_fab(v: dict, custo_op: float, modo: str) -> dict:
+def _calcular_fab(v: dict, custo_op: float, modo: str, considerar_indireto: bool = True) -> dict:
     dt = v["dados_tecnicos"]
     if modo == "Lote":
         if v["tipo"] == "duas_partes":
@@ -95,6 +95,7 @@ def _calcular_fab(v: dict, custo_op: float, modo: str) -> dict:
                 pecas_por_lote=dt["lote"]["num_pecas"],
                 custo_operador_hora=custo_op,
                 rodadas_setup=2,
+                considerar_indireto=considerar_indireto,
                 **LAB,
             )
         else:
@@ -106,6 +107,7 @@ def _calcular_fab(v: dict, custo_op: float, modo: str) -> dict:
                 pecas_por_lote=dt["lote"]["num_pecas"],
                 custo_operador_hora=custo_op,
                 rodadas_setup=1,
+                considerar_indireto=considerar_indireto,
                 **LAB,
             )
     else:
@@ -113,17 +115,19 @@ def _calcular_fab(v: dict, custo_op: float, modo: str) -> dict:
             tempo_total_min=dt["unitario"]["tempo_min"],
             massa_total_g=dt["unitario"]["massa_g"],
             custo_operador_hora=custo_op,
+            considerar_indireto=considerar_indireto,
             **LAB,
         )
 
 
-def _calcular_dev(v: dict, custo_op: float) -> dict:
+def _calcular_dev(v: dict, custo_op: float, considerar_indireto: bool = True) -> dict:
     atividades_json = v["desenvolvimento"]["atividades"]
     tempos = {k: a["horas"] for k, a in atividades_json.items()}
     return calcular_custo_desenvolvimento(
         tempos_horas=tempos,
         custo_operador_hora=custo_op,
         custo_indireto_hora=LAB["custo_indireto_hora"],
+        considerar_indireto=considerar_indireto,
     )
 
 
@@ -213,6 +217,11 @@ with aba_fab:
 
         st.subheader("Perfil do operador")
         custo_op_fab, perfil_fab = _selecionar_operador("fab")
+        considerar_indireto_fab = st.checkbox(
+            "Considerar custos indiretos (infraestrutura)?",
+            value=True,
+            key="fab_indireto",
+        )
 
         st.divider()
         tipo_label = "Peça única" if v_fab["tipo"] == "peca_unica" else "Duas partes (A+B)"
@@ -244,12 +253,12 @@ with aba_fab:
 
     with col_dir:
         # Invalidar resultado se os inputs mudaram desde o último cálculo
-        _cache_fab = (versao_fab, modo_fab, custo_op_fab)
+        _cache_fab = (versao_fab, modo_fab, custo_op_fab, considerar_indireto_fab)
         if st.session_state.get("_fab_cache") != _cache_fab:
             st.session_state.pop("fab_resultado", None)
 
         if st.button("Calcular custo de fabricação", type="primary", use_container_width=True):
-            r_fab = _calcular_fab(v_fab, custo_op_fab, modo_fab)
+            r_fab = _calcular_fab(v_fab, custo_op_fab, modo_fab, considerar_indireto_fab)
             st.session_state["fab_resultado"] = r_fab
             st.session_state["_fab_cache"]    = _cache_fab
 
@@ -301,6 +310,7 @@ with aba_fab:
                     "modo":               modo_fab,
                     "perfil":             perfil_fab,
                     "custo_operador_hora": r["custo_operador_hora"],
+                    "considerar_indireto": considerar_indireto_fab,
                     "custo":              r["custo_total"],
                     "resultado_completo": r,
                 })
@@ -331,6 +341,11 @@ with aba_dev:
 
         st.subheader("Perfil do operador")
         custo_op_dev, perfil_dev = _selecionar_operador("dev")
+        considerar_indireto_dev = st.checkbox(
+            "Considerar custos indiretos (infraestrutura)?",
+            value=True,
+            key="dev_indireto",
+        )
 
         st.divider()
         st.subheader("Horas por atividade")
@@ -345,12 +360,12 @@ with aba_dev:
         st.dataframe(pd.DataFrame(rows_h), use_container_width=True, hide_index=True)
 
     with col_dev2:
-        _cache_dev = (versao_dev, custo_op_dev)
+        _cache_dev = (versao_dev, custo_op_dev, considerar_indireto_dev)
         if st.session_state.get("_dev_cache") != _cache_dev:
             st.session_state.pop("dev_resultado", None)
 
         if st.button("Calcular custo de desenvolvimento", type="primary", use_container_width=True):
-            r_dev = _calcular_dev(v_dev, custo_op_dev)
+            r_dev = _calcular_dev(v_dev, custo_op_dev, considerar_indireto_dev)
             st.session_state["dev_resultado"] = r_dev
             st.session_state["_dev_cache"]    = _cache_dev
 
@@ -405,6 +420,7 @@ with aba_dev:
                     "modo":               "—",
                     "perfil":             perfil_dev,
                     "custo_operador_hora": r_d["custo_operador_hora"],
+                    "considerar_indireto": considerar_indireto_dev,
                     "custo":              r_d["custo_total"],
                     "resultado_completo": r_d,
                 })
@@ -472,6 +488,7 @@ with aba_comp:
                             "modo":               modo_all,
                             "perfil":             perfil_all,
                             "custo_operador_hora": custo_op_all,
+                            "considerar_indireto": True,
                             "custo":              r_all["custo_total"],
                             "resultado_completo": r_all,
                         })
@@ -482,6 +499,7 @@ with aba_comp:
                         "modo":               "—",
                         "perfil":             perfil_all,
                         "custo_operador_hora": custo_op_all,
+                        "considerar_indireto": True,
                         "custo":              r_dev_all["custo_total"],
                         "resultado_completo": r_dev_all,
                     })
